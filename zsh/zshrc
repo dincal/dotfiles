@@ -61,11 +61,12 @@ fi
 
 # nvm -- sourcing is very slow, use lazy load
 if [[ -f "$HOME/.nvm/nvm.sh" ]]; then
-  function nvm() {
-    unfunction nvm
     source "$HOME/.nvm/nvm.sh"
-    nvm "$@"
-  }
+    # function nvm() {
+        # unfunction nvm
+        # source "$HOME/.nvm/nvm.sh"
+        # nvm "$@"
+    # }
 fi
 
 # Additional zplug from ~/.zshrc.local
@@ -193,3 +194,5 @@ conda() {
   _conda_initialize
   conda "$@"
 }
+
+export NVM_DIR=/Users/eddie/.nvm

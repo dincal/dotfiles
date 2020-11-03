@@ -78,3 +78,6 @@ if [ -f $HOME/.bazel/bin/bazel ]; then
   path=( $path $BAZEL_HOME/bin )
 fi
 # }}}
+
+export LS_COLORS="*.xyz=37;41"
+

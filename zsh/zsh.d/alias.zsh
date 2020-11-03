@@ -222,6 +222,7 @@ alias pip3='python3 -m pip'
 alias mypy='python -m mypy'
 alias pycodestyle='python -m pycodestyle'
 alias pylint='python -m pylint'
+alias python='python3'
 
 # PREFIX/bin/python -> PREFIX/bin/ipython, etc.
 alias ipdb='${$(which python)%/*}/ipdb'

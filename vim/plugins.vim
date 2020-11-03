@@ -28,6 +28,17 @@ endfunction
 call plug#begin('~/.vim/plugged')
 "==============================================
 
+" Typescript
+Plug 'HerringtonDarkholme/yats.vim'
+Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
+" For async completion
+Plug 'Shougo/deoplete.nvim'
+" For Denite features
+Plug 'Shougo/denite.nvim'
+" Enable deoplete at startup
+let g:deoplete#enable_at_startup = 1
+
+
 " General and Behaviour
 Plug 'flazz/vim-colorschemes'
 Plug 'vim-airline/vim-airline'
